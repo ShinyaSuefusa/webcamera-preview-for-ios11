@@ -8,6 +8,7 @@ const medias = {
 };
 const video = document.getElementById("video");
 
+alert(typeof navigator.getUserMedia);
 navigator.getUserMedia(medias, successCallback, errorCallback);
 
 function successCallback(stream) {
